@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Utspringet</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="countdown.php">
-</head>
-<body>
-
-	<h1 id="clock">00:00:00</h1><br>
-
-
-	<a href="upload_to_lista.php">UPLOAD</a><br>
-	<h3><strong>Lista för utspring</strong></h3><hr><br>
-	<!-- Database connection -->
+<!-- Database connection -->
 <?php 
 	include 'lista_server.php';
 	$conn = new PDO("mysql:host=$servername;dbname=utspring", $username, "");
@@ -45,6 +29,8 @@
 		</tr>
 	<?php } ?>
 </table>
+
+
 
 </body>
 </html>
